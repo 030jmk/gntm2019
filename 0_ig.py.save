@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jan 30 22:01:41 2019
+@author: Jan Kopankiewicz
+The whole purpose is to occasionally scrape instagram metrics of these selected accounts.
+"""
+
+from instadata import write_to_csv
+
+accountList =['annkathrin.gr',
+ 'lory_irol',
+ 'anasmiaa',
+ 'enisa.bukvic',
+ 'selinahcok',
+ 'theresiafischer',
+ 'lucy_m_thomas',
+ 'melinalxcht',
+ 'lionyleo',
+ 'juliajhm',
+ '_r.say_',
+ 'caeciliaz',
+ 'joellejuana',
+ 'jasminveitcadeterosado',
+ 'biancaolivia',
+ 'marlene.thdr',
+ 'simii_kowalski',
+ 'naomiiufelle',
+ 'caro_kr_',
+ 'tatjana9610',
+ 'dgdebora',
+ 'celine.hamann',
+ 'melisslana',
+ 'moon._.kitty',
+ 'isabellkremer',
+ 'kimdammer_',
+ 'catharinamaranca',
+ '_yaraline_',
+ 'alicija.koe',
+ 'aboutvivanessa',
+ 'sarahalmoril',
+ 'lenalswk',
+ 'mariawillhauk',
+ 'justinekli',
+ 'olivia.rhd',
+  '']
+
+for accountName in accountList:
+	try:
+		write_to_csv(accountName)
+	except:
+		continue
